@@ -2,7 +2,7 @@
 
 Personal portfolio website built with HTML, CSS, and JavaScript.
 
-🔗 **Live:** [uktamturgunov.github.io/my_portfolio](https://uktamturgunov.github.io/my_portfolio)
+🔗 **Live:** [uktamturgunov.github.io/my_portfolio](https://oktamturgun.github.io/my_portfolio/)
 
 ---
 
