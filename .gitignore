@@ -1,0 +1,22 @@
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.temp
+
+# Node (agar keyinroq npm ishlatilsa)
+node_modules/
+npm-debug.log*
+
+# Build output (agar keyinroq Vite/Webpack ishlatilsa)
+dist/
+build/
