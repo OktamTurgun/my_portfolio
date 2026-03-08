@@ -95,3 +95,41 @@ function downloadCV(e) {
 
     alert('📄 CV hali yuklanmagan!\n\nFaylni qo\'shish uchun:\nassets/docs/resume.pdf ga joylashtiring\nva bu funksiyani uncomment qiling.');
 }
+
+// ── CONTACT FORM ──
+function sendMessage() {
+    const name    = document.getElementById('fname')?.value.trim();
+    const email   = document.getElementById('femail')?.value.trim();
+    const subject = document.getElementById('fsubject')?.value.trim();
+    const message = document.getElementById('fmessage')?.value.trim();
+    const status  = document.getElementById('formStatus');
+
+    if (!status) return;
+
+    if (!name || !email || !message) {
+        status.textContent = '⚠ Please fill in all required fields.';
+        status.style.display = 'block';
+        status.style.background = 'rgba(239,68,68,0.1)';
+        status.style.border = '1px solid #ef4444';
+        status.style.color = '#ef4444';
+        return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        status.textContent = '⚠ Please enter a valid email address.';
+        status.style.display = 'block';
+        status.style.background = 'rgba(239,68,68,0.1)';
+        status.style.border = '1px solid #ef4444';
+        status.style.color = '#ef4444';
+        return;
+    }
+
+    const mailto = `mailto:uktamturgunov30@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Contact')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+    window.open(mailto);
+
+    status.textContent = '✓ Message prepared! Your email client should open now.';
+    status.style.display = 'block';
+    status.style.background = 'rgba(16,185,129,0.1)';
+    status.style.border = '1px solid #10b981';
+    status.style.color = '#10b981';
+}
