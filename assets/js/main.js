@@ -54,13 +54,11 @@ function closeMenu() {
 
 // ── CONTACT FORM ──
 function sendMessage() {
-    const name    = document.getElementById('fname')?.value.trim();
-    const email   = document.getElementById('femail')?.value.trim();
-    const subject = document.getElementById('fsubject')?.value.trim();
-    const message = document.getElementById('fmessage')?.value.trim();
+    const name    = document.getElementById('fname').value.trim();
+    const email   = document.getElementById('femail').value.trim();
+    const subject = document.getElementById('fsubject').value.trim();
+    const message = document.getElementById('fmessage').value.trim();
     const status  = document.getElementById('formStatus');
-
-    if (!status) return;
 
     if (!name || !email || !message) {
         status.textContent = '⚠ Please fill in all required fields.';
@@ -71,23 +69,31 @@ function sendMessage() {
         return;
     }
 
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        status.textContent = '⚠ Please enter a valid email address.';
+    emailjs.send("service_18ih6u8", "template_upkjxdk", {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+    })
+    .then(() => {
+        status.textContent = '✓ Message sent! I will reply soon.';
+        status.style.display = 'block';
+        status.style.background = 'rgba(16,185,129,0.1)';
+        status.style.border = '1px solid #10b981';
+        status.style.color = '#10b981';
+        // Formani tozalash
+        document.getElementById('fname').value = '';
+        document.getElementById('femail').value = '';
+        document.getElementById('fsubject').value = '';
+        document.getElementById('fmessage').value = '';
+    })
+    .catch(() => {
+        status.textContent = '✗ Something went wrong. Try emailing directly.';
         status.style.display = 'block';
         status.style.background = 'rgba(239,68,68,0.1)';
         status.style.border = '1px solid #ef4444';
         status.style.color = '#ef4444';
-        return;
-    }
-
-    const mailto = `mailto:uktamturgunov30@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Contact')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-    window.open(mailto);
-
-    status.textContent = '✓ Message prepared! Your email client should open now.';
-    status.style.display = 'block';
-    status.style.background = 'rgba(16,185,129,0.1)';
-    status.style.border = '1px solid #10b981';
-    status.style.color = '#10b981';
+    });
 }
 
 // ── CV DOWNLOAD ──
