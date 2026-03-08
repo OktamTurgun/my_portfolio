@@ -90,16 +90,11 @@ function sendMessage() {
     status.style.color = '#10b981';
 }
 
-
 // ── CV DOWNLOAD ──
 function downloadCV(e) {
     e.preventDefault();
-
-    // CV fayl tayyor bo'lgach quyidagi qatorlarni uncomment qiling:
-    // const a = document.createElement('a');
-    // a.href = 'assets/docs/resume.pdf';
-    // a.download = 'Uktam_Turgunov_CV.pdf';
-    // a.click();
-
-    alert('📄 CV hali yuklanmagan!\n\nFaylni qo\'shish uchun:\nassets/docs/resume.pdf ga joylashtiring\nva bu funksiyani uncomment qiling.');
+    const a = document.createElement('a');
+    a.href = 'assets/docs/resume.pdf';
+    a.download = 'Uktam_Turgunov_CV.pdf';
+    a.click();
 }
