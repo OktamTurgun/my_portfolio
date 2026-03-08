@@ -64,50 +64,6 @@ function sendMessage() {
 
     if (!name || !email || !message) {
         status.textContent = '⚠ Please fill in all required fields.';
-        status.className = 'form-status error';
-        return;
-    }
-
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        status.textContent = '⚠ Please enter a valid email address.';
-        status.className = 'form-status error';
-        return;
-    }
-
-    // mailto orqali email ochish (backend tayyor bo'lguncha)
-    const mailto = `mailto:uktamturgunov@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Contact')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-    window.open(mailto);
-
-    status.textContent = '✓ Message prepared! Your email client should open now.';
-    status.className = 'form-status success';
-}
-
-
-// ── CV DOWNLOAD ──
-function downloadCV(e) {
-    e.preventDefault();
-
-    // CV fayl tayyor bo'lgach quyidagi qatorni uncomment qiling:
-    // const a = document.createElement('a');
-    // a.href = 'assets/docs/resume.pdf';
-    // a.download = 'Uktam_Turgunov_CV.pdf';
-    // a.click();
-
-    alert('📄 CV hali yuklanmagan!\n\nFaylni qo\'shish uchun:\nassets/docs/resume.pdf ga joylashtiring\nva bu funksiyani uncomment qiling.');
-}
-
-// ── CONTACT FORM ──
-function sendMessage() {
-    const name    = document.getElementById('fname')?.value.trim();
-    const email   = document.getElementById('femail')?.value.trim();
-    const subject = document.getElementById('fsubject')?.value.trim();
-    const message = document.getElementById('fmessage')?.value.trim();
-    const status  = document.getElementById('formStatus');
-
-    if (!status) return;
-
-    if (!name || !email || !message) {
-        status.textContent = '⚠ Please fill in all required fields.';
         status.style.display = 'block';
         status.style.background = 'rgba(239,68,68,0.1)';
         status.style.border = '1px solid #ef4444';
@@ -132,4 +88,18 @@ function sendMessage() {
     status.style.background = 'rgba(16,185,129,0.1)';
     status.style.border = '1px solid #10b981';
     status.style.color = '#10b981';
+}
+
+
+// ── CV DOWNLOAD ──
+function downloadCV(e) {
+    e.preventDefault();
+
+    // CV fayl tayyor bo'lgach quyidagi qatorlarni uncomment qiling:
+    // const a = document.createElement('a');
+    // a.href = 'assets/docs/resume.pdf';
+    // a.download = 'Uktam_Turgunov_CV.pdf';
+    // a.click();
+
+    alert('📄 CV hali yuklanmagan!\n\nFaylni qo\'shish uchun:\nassets/docs/resume.pdf ga joylashtiring\nva bu funksiyani uncomment qiling.');
 }
