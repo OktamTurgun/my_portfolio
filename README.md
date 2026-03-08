@@ -48,7 +48,7 @@ Just open `index.html` in your browser — no build tools needed.
 
 ## 📬 Contact
 
-- Email: uktamturgunov@gmail.com
+- Email: uktamturgunov30@gmail.com
 - GitHub: [@OktamTurgun](https://github.com/OktamTurgun)
 - LinkedIn: [uktamturgunov](https://linkedin.com/in/uktamturgunov)
 
