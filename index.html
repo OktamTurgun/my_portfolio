@@ -199,102 +199,210 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title fade-in">Featured Projects</h2>
-            <p class="section-subtitle text-center fade-in">Solutions developed during bootcamp training, focused on performance and scalability</p>
-            
+            <p class="section-subtitle text-center fade-in">Real projects built with Python, Django, DRF and more</p>
+
             <div class="projects-grid">
+
+                <!-- 1. E-commerce API -->
                 <div class="project-card fade-in">
                     <div class="project-header">
                         <div class="project-icon purple"></div>
-                        <h4 class="project-title">E-commerce Platform</h4>
+                        <h4 class="project-title">E-commerce API</h4>
                     </div>
                     <p class="project-description">
-                        A complete e-commerce solution with user authentication, product management, shopping cart, 
-                        and order processing. Built with Django REST framework for scalable API design.
+                        Production-ready RESTful API with JWT auth, product catalog, shopping cart, 
+                        Stripe payments, Redis caching (12.3x faster), 199 tests, 84% coverage.
                     </p>
                     <div class="tech-tags">
                         <span class="tech-tag">Django</span>
-                        <span class="tech-tag">PostgreSQL</span>
                         <span class="tech-tag">DRF</span>
-                        <span class="tech-tag">Bootstrap</span>
-                    </div>
-                    <div class="project-period">
-                        <i class="fas fa-calendar"></i>
-                        2025 - Present
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <div class="project-icon blue"></div>
-                        <h4 class="project-title">Task Management System</h4>
-                    </div>
-                    <p class="project-description">
-                        Project management tool with task assignment, progress tracking, and team collaboration features. 
-                        Implements real-time updates and notification system.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">WebSocket</span>
-                        <span class="tech-tag">SQLite</span>
-                    </div>
-                    <div class="project-period">
-                        <i class="fas fa-calendar"></i>
-                        2025
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <div class="project-icon green"></div>
-                        <h4 class="project-title">Blog Platform with CMS</h4>
-                    </div>
-                    <p class="project-description">
-                        Modern blogging platform with content management system, rich text editor, 
-                        comment system, and SEO optimization features.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Django</span>
                         <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">TinyMCE</span>
-                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Celery</span>
+                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">Docker</span>
                     </div>
-                    <div class="project-period">
-                        <i class="fas fa-calendar"></i>
-                        2025
+                    <div class="project-links" style="margin-top:1rem;display:flex;gap:0.8rem;">
+                        <a href="https://github.com/OktamTurgun/ecommerce-api" target="_blank" class="btn-secondary" style="padding:0.4rem 1rem;font-size:0.8rem;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
                     </div>
                 </div>
 
+                <!-- 2. Instagram Clone API -->
                 <div class="project-card fade-in">
                     <div class="project-header">
                         <div class="project-icon pink"></div>
-                        <h4 class="project-title">API Integration Service</h4>
+                        <h4 class="project-title">Instagram Clone API</h4>
                     </div>
                     <p class="project-description">
-                        Service for integrating multiple third-party APIs with data processing, caching, 
-                        and automated synchronization capabilities.
+                        Enterprise-grade Instagram backend with dual-channel auth (email/phone), 
+                        async email via Celery + Redis, JWT, rate limiting, international phone validation.
                     </p>
                     <div class="tech-tags">
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">DRF</span>
                         <span class="tech-tag">Celery</span>
-                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">JWT</span>
                     </div>
-                    <div class="project-period">
-                        <i class="fas fa-calendar"></i>
-                        2025
+                    <div class="project-links" style="margin-top:1rem;display:flex;gap:0.8rem;">
+                        <a href="https://github.com/OktamTurgun/instagram_clone_api" target="_blank" class="btn-secondary" style="padding:0.4rem 1rem;font-size:0.8rem;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
                     </div>
                 </div>
+
+                <!-- 3. Library API -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-icon blue"></div>
+                        <h4 class="project-title">Library API</h4>
+                    </div>
+                    <p class="project-description">
+                        Library management REST API with JWT auth, CRUD operations, Swagger/ReDoc docs, 
+                        WhiteNoise static files. Deployed on Railway.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">DRF</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">Swagger</span>
+                        <span class="tech-tag">Railway</span>
+                    </div>
+                    <div class="project-links" style="margin-top:1rem;display:flex;gap:0.8rem;">
+                        <a href="https://github.com/OktamTurgun/library_api" target="_blank" class="btn-secondary" style="padding:0.4rem 1rem;font-size:0.8rem;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. News Project -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-icon green"></div>
+                        <h4 class="project-title">News Website</h4>
+                    </div>
+                    <p class="project-description">
+                        Professional Django news site with admin CMS, category filtering, 
+                        search, contact form, media uploads, and responsive Bootstrap frontend.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                    </div>
+                    <div class="project-links" style="margin-top:1rem;display:flex;gap:0.8rem;">
+                        <a href="https://github.com/OktamTurgun/news-Project" target="_blank" class="btn-secondary" style="padding:0.4rem 1rem;font-size:0.8rem;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5. Password Manager -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-icon purple"></div>
+                        <h4 class="project-title">Password Manager</h4>
+                    </div>
+                    <p class="project-description">
+                        Python CLI tool for secure password management with CRUD operations, 
+                        strong password generation, JSON storage, and unit tests.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CLI</span>
+                        <span class="tech-tag">JSON</span>
+                        <span class="tech-tag">unittest</span>
+                    </div>
+                    <div class="project-links" style="margin-top:1rem;display:flex;gap:0.8rem;">
+                        <a href="https://github.com/OktamTurgun/password_manager" target="_blank" class="btn-secondary" style="padding:0.4rem 1rem;font-size:0.8rem;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6. Library Manager -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-icon blue"></div>
+                        <h4 class="project-title">Library Manager</h4>
+                    </div>
+                    <p class="project-description">
+                        Python CLI library management app with full CRUD, sorting, statistics, 
+                        CSV export, type hints, 25 passing unit tests, and modular architecture.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CLI</span>
+                        <span class="tech-tag">CSV</span>
+                        <span class="tech-tag">unittest</span>
+                    </div>
+                    <div class="project-links" style="margin-top:1rem;display:flex;gap:0.8rem;">
+                        <a href="https://github.com/OktamTurgun/library_manager" target="_blank" class="btn-secondary" style="padding:0.4rem 1rem;font-size:0.8rem;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 7. Contacts Manager -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-icon green"></div>
+                        <h4 class="project-title">Contacts Manager</h4>
+                    </div>
+                    <p class="project-description">
+                        Python CLI contacts app with CRUD operations, phone validation, 
+                        alphabetical sorting, JSON persistence, and automatic save on change.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CLI</span>
+                        <span class="tech-tag">JSON</span>
+                        <span class="tech-tag">Validation</span>
+                    </div>
+                    <div class="project-links" style="margin-top:1rem;display:flex;gap:0.8rem;">
+                        <a href="https://github.com/OktamTurgun/contacts_manager" target="_blank" class="btn-secondary" style="padding:0.4rem 1rem;font-size:0.8rem;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 8. Mini Portfolio -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-icon pink"></div>
+                        <h4 class="project-title">Mini Portfolio Website</h4>
+                    </div>
+                    <p class="project-description">
+                        Responsive personal portfolio with light/dark mode toggle, 
+                        smooth scroll, hamburger menu, and project showcase section.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    <div class="project-links" style="margin-top:1rem;display:flex;gap:0.8rem;">
+                        <a href="https://github.com/OktamTurgun/mini-portfolio-website" target="_blank" class="btn-secondary" style="padding:0.4rem 1rem;font-size:0.8rem;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
             <!-- CTA Section -->
             <div class="cta-section fade-in">
-                <h3 class="cta-title">Interested in a similar project?</h3>
+                <h3 class="cta-title">Interested in working together?</h3>
                 <p class="cta-description">
                     Let's discuss how I can help turn your idea into reality.
                 </p>
                 <div class="cta-buttons">
-                    <a class="btn btn-primary" href="mailto:uktamturgunov@gmail.com">
+                    <a class="btn btn-primary" href="mailto:uktamturgunov30@gmail.com">
                         <i class="fas fa-envelope"></i> Get in touch
                     </a>
                     <a class="btn btn-secondary" href="https://github.com/OktamTurgun" target="_blank">
