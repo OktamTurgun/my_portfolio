@@ -104,3 +104,18 @@ function downloadCV(e) {
     a.download = 'Uktam_Turgunov_CV.pdf';
     a.click();
 }
+
+// ── BACK TO TOP BUTTON ──
+const backToTopBtn = document.getElementById("backToTop");
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+};
+
+backToTopBtn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
