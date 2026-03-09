@@ -23,19 +23,23 @@
 
 /* Kunduzgi rejim (Light mode) */
 [data-theme="light"] {
-    --bg-primary: #fdfdfd;      /* Asosiy fondagi oq rang (biroz yumshoq) */
-    --bg-secondary: #f0f2f5;    /* Elementlar orqa foni */
-    --bg-tertiary: #e9ecef;     /* Uchinchi darajali fon */
-    --text-primary: #1a1a1a;    /* Asosiy qora matn */
-    --text-secondary: #4a5568;  /* Ikkinchi darajali kulrang matn */
-    --text-muted: #718096;      /* Xira matnlar uchun */
-    --accent-primary: #4f46e5;  /* Light modeda binafsharang biroz yorqinroq bo'lishi kerak */
-    --bg-card: #ffffff;         /* Kartochkalar toza oq rangda */
-    --bg-section: #f7fafc;      /* Sektsiyalar uchun ajratuvchi fon */
-    --accent-danger: #e53e3e;   /* Xatolik/Sevish rangi */
-    --bg-dark: #edf2f7;         /* To'q elementlar o'rniga ishlatiladigan och kulrang */
-    --border-color: #e2e8f0;    /* Chiziqlar va borderlar uchun */
-    --success-color: #059669;   /* Yashil rang (biroz to'qroq, oq fonda yaxshi ko'rinishi uchun) */
+    /* Fondagi o'zgarishlar */
+    --bg-primary: #f8fafc;       /* Juda och ko'k-kulrang (Slate 50) */
+    --bg-secondary: #ffffff;     /* Elementlar uchun sof oq */
+    --bg-tertiary: #f1f5f9;      /* Slate 100: bo'limlarni ajratish uchun */
+    
+    /* Matnlar (Kontrastni yaxshilash) */
+    --text-primary: #0f172a;     /* Slate 900: mutloq qora emas, to'q kishi */
+    --text-secondary: #475569;   /* Slate 600: o'qishga qulay kulrang */
+    --text-muted: #94a3b8;       /* Slate 400: yordamchi matnlar */
+    
+    /* Aktsentlar */
+    --accent-primary: #4f46e5;   /* Indigo 600: oq fonda yorqinroq ko'rinadi */
+    --bg-card: #ffffff;
+    --bg-section: #f1f5f9;
+    
+    /* Border va Soyalar */
+    --border-color: #e2e8f0;     /* Slate 200: nozik chegaralar */
 }
 
 body {
@@ -885,4 +889,21 @@ body {
     .tech-item i {
         font-size: 1.5rem;
     }
+}
+
+/* Light modeda kartochkalar va navigatsiyani professional qilish */
+[data-theme="light"] .project-card, 
+[data-theme="light"] .contact-form-card,
+[data-theme="light"] .navbar {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="light"] .experience-item {
+    border-left: 2px solid var(--border-color);
+}
+
+[data-theme="light"] .experience-item::before {
+    background: #ffffff;
+    border: 2px solid var(--accent-primary);
 }
