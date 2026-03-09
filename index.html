@@ -14,20 +14,22 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#home">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#start">
                 <div class="brand-initials">UT</div>
-                Uktam Turgunov
+                <span class="brand-name">Uktam Turgunov</span>
             </a>
-            <div class="d-flex align-items-center">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <button class="theme-toggle ms-2">
-                    <i class="fas fa-sun"></i>
-                </button>
-            </div>
+
+            <!-- Mobile toggler -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Nav links + icons -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <!-- Center links -->
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link active" href="#start">Start</a>
                     </li>
@@ -41,9 +43,20 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <div class="navbar-nav ms-3">
-                    <a href="https://github.com/uktamturgunov" class="nav-link" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/uktamturgunov" class="nav-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+                <!-- Right: icons -->
+                <div class="navbar-icons">
+                    <a href="https://github.com/OktamTurgun" target="_blank"
+                       class="navbar-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/uktam-turgunov" target="_blank"
+                       class="navbar-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <button class="navbar-icon theme-toggle" title="Toggle theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -68,14 +81,14 @@
                     Available for projects and work
                 </div>
                 <div class="hero-buttons" style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="assets/docs/resume.pdf" download="Uktam_Turgunov_CV.pdf"
-                  class="btn btn-primary" style="font-size: 0.9rem;">
-                    <i class="fas fa-download me-2"></i> Download CV
-                </a>
-                <a href="#contact" class="btn btn-secondary" style="font-size: 0.9rem;">
-                    <i class="fas fa-envelope me-2"></i> Contact Me
-                </a>
-            </div>
+                    <a href="assets/docs/resume.pdf" download="Uktam_Turgunov_CV.pdf"
+                       class="btn btn-primary" style="font-size: 0.9rem;">
+                        <i class="fas fa-download me-2"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" style="font-size: 0.9rem;">
+                        <i class="fas fa-envelope me-2"></i> Contact Me
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -123,12 +136,12 @@
                 <div class="col-lg-8 mx-auto">
                     <div class="about-content fade-in">
                         <p class="about-text">
-                            Backend Developer with <span class="highlight-text">bootcamp training</span> creating scalable solutions 
+                            Backend Developer with <span class="highlight-text">bootcamp training</span> creating scalable solutions
                             for web applications that serve modern business needs.
                         </p>
                         <p class="about-text">
-                            Specialist in <span class="highlight-text">Python, Django, and PostgreSQL</span>, with knowledge of 
-                            modern frontend technologies. Focused on clean architectures, efficient database design, and 
+                            Specialist in <span class="highlight-text">Python, Django, and PostgreSQL</span>, with knowledge of
+                            modern frontend technologies. Focused on clean architectures, efficient database design, and
                             best development practices.
                         </p>
                         <div class="stats">
@@ -137,7 +150,7 @@
                                 <div class="stat-label">months of learning</div>
                             </div>
                             <div class="stat-item">
-                                <div class="stat-number">5</div>
+                                <div class="stat-number">8</div>
                                 <div class="stat-label">completed projects</div>
                             </div>
                             <div class="stat-item">
@@ -156,7 +169,7 @@
         <div class="container">
             <h2 class="section-title fade-in">Experience</h2>
             <p class="section-subtitle text-center fade-in">Growth trajectory in the development area, focused on scalable solutions</p>
-            
+
             <div class="experience-item fade-in">
                 <div class="experience-header">
                     <div>
@@ -170,7 +183,7 @@
                     </div>
                 </div>
                 <div class="experience-description">
-                    Intensive training in modern web development technologies with focus on backend development. 
+                    Intensive training in modern web development technologies with focus on backend development.
                     Building real-world projects using Django, PostgreSQL, and modern development practices.
                 </div>
                 <div class="tech-tags">
@@ -193,7 +206,7 @@
                     <div class="experience-period">May 2024 - Aug 2024</div>
                 </div>
                 <div class="experience-description">
-                    Started learning programming fundamentals, completed online courses, and built first projects. 
+                    Started learning programming fundamentals, completed online courses, and built first projects.
                     Developed strong foundation in Python programming and web development basics.
                 </div>
                 <div class="tech-tags">
@@ -221,7 +234,7 @@
                         <h4 class="project-title">E-commerce API</h4>
                     </div>
                     <p class="project-description">
-                        Production-ready RESTful API with JWT auth, product catalog, shopping cart, 
+                        Production-ready RESTful API with JWT auth, product catalog, shopping cart,
                         Stripe payments, Redis caching (12.3x faster), 199 tests, 84% coverage.
                     </p>
                     <div class="tech-tags">
@@ -247,7 +260,7 @@
                         <h4 class="project-title">Instagram Clone API</h4>
                     </div>
                     <p class="project-description">
-                        Enterprise-grade Instagram backend with dual-channel auth (email/phone), 
+                        Enterprise-grade Instagram backend with dual-channel auth (email/phone),
                         async email via Celery + Redis, JWT, rate limiting, international phone validation.
                     </p>
                     <div class="tech-tags">
@@ -272,7 +285,7 @@
                         <h4 class="project-title">Library API</h4>
                     </div>
                     <p class="project-description">
-                        Library management REST API with JWT auth, CRUD operations, Swagger/ReDoc docs, 
+                        Library management REST API with JWT auth, CRUD operations, Swagger/ReDoc docs,
                         WhiteNoise static files. Deployed on Railway.
                     </p>
                     <div class="tech-tags">
@@ -296,7 +309,7 @@
                         <h4 class="project-title">News Website</h4>
                     </div>
                     <p class="project-description">
-                        Professional Django news site with admin CMS, category filtering, 
+                        Professional Django news site with admin CMS, category filtering,
                         search, contact form, media uploads, and responsive Bootstrap frontend.
                     </p>
                     <div class="tech-tags">
@@ -319,7 +332,7 @@
                         <h4 class="project-title">Password Manager</h4>
                     </div>
                     <p class="project-description">
-                        Python CLI tool for secure password management with CRUD operations, 
+                        Python CLI tool for secure password management with CRUD operations,
                         strong password generation, JSON storage, and unit tests.
                     </p>
                     <div class="tech-tags">
@@ -342,7 +355,7 @@
                         <h4 class="project-title">Library Manager</h4>
                     </div>
                     <p class="project-description">
-                        Python CLI library management app with full CRUD, sorting, statistics, 
+                        Python CLI library management app with full CRUD, sorting, statistics,
                         CSV export, type hints, 25 passing unit tests, and modular architecture.
                     </p>
                     <div class="tech-tags">
@@ -365,7 +378,7 @@
                         <h4 class="project-title">Contacts Manager</h4>
                     </div>
                     <p class="project-description">
-                        Python CLI contacts app with CRUD operations, phone validation, 
+                        Python CLI contacts app with CRUD operations, phone validation,
                         alphabetical sorting, JSON persistence, and automatic save on change.
                     </p>
                     <div class="tech-tags">
@@ -388,11 +401,11 @@
                         <h4 class="project-title">Mini Portfolio Website</h4>
                     </div>
                     <p class="project-description">
-                        Responsive personal portfolio with light/dark mode toggle, 
+                        Responsive personal portfolio with light/dark mode toggle,
                         smooth scroll, hamburger menu, and project showcase section.
                     </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">HTML5</span>
+                    <div class="tech-tags pink">
+                        <span class="tech-tag pink">HTML5</span>
                         <span class="tech-tag">CSS3</span>
                         <span class="tech-tag">JavaScript</span>
                         <span class="tech-tag">Responsive</span>
@@ -459,14 +472,14 @@
                             <i class="fab fa-github" style="color:var(--accent-primary); width:20px;"></i>
                             github.com/OktamTurgun
                         </a>
-                        <a href="https://linkedin.com/in/uktamturgunov" target="_blank"
+                        <a href="https://linkedin.com/in/uktam-turgunov" target="_blank"
                            style="display:flex; align-items:center; gap:0.8rem; color:var(--text-secondary);
                                   text-decoration:none; font-size:0.9rem; padding:0.8rem 0;
                                   border-bottom:1px solid var(--border-color); transition:color 0.2s;"
                            onmouseover="this.style.color='var(--text-primary)'"
                            onmouseout="this.style.color='var(--text-secondary)'">
                             <i class="fab fa-linkedin" style="color:var(--accent-primary); width:20px;"></i>
-                            linkedin.com/in/uktamturgunov
+                            linkedin.com/in/uktam-turgunov
                         </a>
                         <a href="https://t.me/uktamturgunov" target="_blank"
                            style="display:flex; align-items:center; gap:0.8rem; color:var(--text-secondary);
@@ -558,7 +571,7 @@
                 <div class="footer-info">
                     <h5>Uktam Turgunov</h5>
                     <p>Backend Developer • Tashkent, Uzbekistan</p>
-                 </div>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>Made with <span class="love-text">♥</span> by Uktam Turgunov</p>
