@@ -1,4 +1,4 @@
-# 🧑‍💻 Uktam Turgunov — Professional Portfolio
+# 🧑‍💻 Uktam Turgunov
 
 Personal portfolio website built with modern web technologies, focusing on clean UI/UX and dynamic data rendering.
 
