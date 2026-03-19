@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -42,8 +44,16 @@
     --border-color: #e2e8f0;     /* Slate 200: nozik chegaralar */
 }
 
-body {
+/* body {
     font-family: 'Courier New', monospace;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+} */
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
@@ -559,6 +569,43 @@ body {
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.btn-live-demo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0.4rem 1rem;
+    
+    /* Sizning o'zgaruvchilaringizdan foydalanamiz */
+    background-color: var(--accent-primary);
+    border: 1px solid var(--accent-primary);
+    color: #ffffff !important;
+    
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    /* Soya effekti */
+    box-shadow: 0 4px 6px rgba(87, 82, 179, 0.2);
+}
+
+.btn-live-demo:hover {
+    /* Hover bo'lganda biroz yorqinlashadi */
+    filter: brightness(1.2); 
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(87, 82, 179, 0.3);
+    color: #ffffff !important;
+}
+
+/* Light Mode uchun maxsus (Agar kerak bo'lsa) */
+[data-theme="light"] .btn-live-demo {
+    /* Light modeda Indigo 600 ishlatiladi */
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
 }
 
 .btn-primary {
