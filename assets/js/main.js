@@ -70,8 +70,8 @@ function sendMessage() {
     }
 
     emailjs.send("service_18ih6u8", "template_upkjxdk", {
-        from_name: name,
-        from_email: email,
+        name: name,
+        email: email,
         subject: subject,
         message: message,
     })
@@ -108,17 +108,19 @@ function downloadCV(e) {
 // ── BACK TO TOP BUTTON ──
 const backToTopBtn = document.getElementById("backToTop");
 
-window.onscroll = function() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        backToTopBtn.style.display = "block";
-    } else {
-        backToTopBtn.style.display = "none";
-    }
-};
+if (backToTopBtn) {
+    window.addEventListener('scroll', function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    });
 
-backToTopBtn.onclick = function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+    backToTopBtn.onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+}
 
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
