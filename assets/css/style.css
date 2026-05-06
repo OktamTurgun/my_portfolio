@@ -642,6 +642,27 @@ body {
     background: var(--bg-tertiary);
 }
 
+/* Light mode uchun Contact Me tugmasi hover holati */
+[data-theme="light"] .btn-secondary:hover {
+    background-color: var(--text-primary); /* To'q rangli fon (Slate 900) */
+    color: var(--bg-secondary) !important; /* Oq matn */
+    border-color: var(--text-primary);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15); /* Yengil soya */
+}
+
+/* Tugma ichidagi ikonka rangi ham o'zgarishi uchun */
+[data-theme="light"] .btn-secondary:hover i {
+    color: var(--bg-secondary) !important;
+}
+
+/* Dark mode uchun (eskicha qolmasligi uchun biroz yangilangan) */
+.btn-secondary:hover {
+    border-color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
 /* ── CONTACT SECTION ── */
 .contact {
     padding: 6rem 0;
