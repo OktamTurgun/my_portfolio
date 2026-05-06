@@ -903,59 +903,107 @@ body {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.2rem;
+    /* 1. Global & Overflow Fix */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
+    /* 2. Typography & Hero */
+    .hero {
+        padding: 100px 0 4rem;
+        min-height: auto;
     }
+    .hero h1 { font-size: 2rem; line-height: 1.2; }
+    .hero-avatar { width: 140px; height: 140px; }
+    .hero .subtitle { font-size: 1.1rem; }
 
-    .stats {
-        gap: 2rem;
-        flex-wrap: wrap;
-    }
-
-    .navbar-nav {
-        text-align: center;
-        padding-top: 1rem;
-    }
-
+    /* 3. Navigation & Navbar */
+    .navbar-brand { margin-right: auto; }
+    .navbar-nav { text-align: center; padding: 1rem 0; }
     .navbar-icons {
         justify-content: center;
         padding: 0.5rem 0 1rem;
+        gap: 1rem;
     }
 
-    .cta-buttons {
+    /* 4. Layout Grids (Bitta ustun va markazlash) */
+    .projects-grid, 
+    .footer-grid, 
+    .stats {
+        grid-template-columns: 1fr !important;
+        display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .footer-content {
-        flex-direction: column;
         text-align: center;
+        gap: 2rem;
+    }
+    .projects-grid { gap: 1.5rem; width: 100%; }
+
+    .tech-grid { justify-content: center; gap: 0.8rem; }
+    .tech-item { width: 65px; height: 65px; }
+
+    /* 5. Cards & Experience */
+    .experience-item, .project-card, .contact-form-card { padding: 1.5rem; }
+    .experience-header { flex-direction: column; align-items: flex-start; }
+    .experience-period { text-align: left; margin-top: 0.5rem; font-size: 0.85rem; }
+
+    /* 6. Buttons (CTA) */
+    .cta-buttons { flex-direction: column; gap: 1rem; width: 100%; }
+    .btn-primary, .btn-secondary, .btn-live-demo {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
     }
 
-    .experience-header {
+    /* 7. Footer Socials & Navigation (MARKAZLASH) */
+    .footer-links h6, .footer-brand p { 
+        text-align: center; 
+        width: 100%; 
+    }
+    
+    /* Barcha turdagi ijtimoiy tarmoq bloklarini bittada markazga olamiz */
+    .footer-links ul, 
+    .footer-social-icons, 
+    .social-links,
+    .footer-links div[style*="flex"] { 
+        display: flex !important;
+        justify-content: center !important; 
+        align-items: center !important;
+        gap: 1.5rem;
+        padding: 0;
+        margin: 1rem auto !important;
+        list-style: none;
+        width: 100%;
+    }
+    .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+
+    /* 8. Contact Section (O'ngga surish) */
+    .contact-links {
+        display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        padding-left: 15% !important; /* Bu qiymat linklarni vizual markazga yaqinlashtiradi */
+        width: 100%;
     }
+    .contact-link { margin-bottom: 0.7rem; }
+}
 
-    .experience-period {
-        text-align: left;
-        margin-top: 0.5rem;
+/* 9. Juda kichik ekranlar uchun qo'shimcha (iPhone SE) */
+@media (max-width: 400px) {
+    .hero h1 { font-size: 1.75rem; }
+    .contact-links { padding-left: 10% !important; }
+}
+
+/* Juda kichik ekranlar uchun (iPhone SE kabi) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.75rem;
     }
-
-    .tech-grid {
-        gap: 0.8rem;
-    }
-
-    .tech-item {
-        width: 70px;
-        height: 70px;
-    }
-
-    .tech-item i {
-        font-size: 1.5rem;
+    
+    .brand-name {
+        font-size: 0.8rem;
     }
 }
 
