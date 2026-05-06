@@ -27,22 +27,26 @@
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="#start">
-              <div class="brand-initials">UT</div>
-              <span class="brand-name">Uktam Turgunov</span>
-          </a>
+                <div class="brand-initials">UT</div>
+                <span class="brand-name">Uktam Turgunov</span>
+            </a>
 
-            <!-- Mobile toggler -->
-            <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <!-- Mobile toggler (Gamburger tugmasi) -->
+            <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
-            <!-- Nav links + icons -->
+            <!-- Nav links + icons (Mobil menyu ichiga kiradi) -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Center links -->
+                <!-- Markazdagi linklar -->
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link active" href="#start">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
@@ -55,7 +59,7 @@
                     </li>
                 </ul>
 
-                <!-- Right: icons -->
+                <!-- O'ng tomondagi iconlar -->
                 <div class="navbar-icons">
                     <a href="https://github.com/OktamTurgun" target="_blank" class="navbar-icon" title="GitHub">
                         <i class="fab fa-github"></i>
@@ -63,7 +67,7 @@
                     <a href="https://linkedin.com/in/uktam-turgunov" target="_blank" class="navbar-icon" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <button id="theme-toggle" class="navbar-icon" style="border: none; background: transparent; cursor: pointer;" title="Toggle theme">
+                    <button id="theme-toggle" class="navbar-icon" title="Toggle theme">
                         <i id="theme-icon" class="fas fa-moon"></i>
                     </button>
                 </div>
@@ -107,15 +111,23 @@
         <div class="container">
             <h3 class="section-title">Technologies and Tools</h3>
             <div class="tech-grid fade-in">
+                <!-- Backend & Language -->
                 <div class="tech-item" title="Python">
                     <i class="fab fa-python"></i>
                 </div>
-                <div class="tech-item" title="Django">
+                <div class="tech-item" title="Django / DRF">
                     <i class="fas fa-server"></i>
                 </div>
+
+                <!-- Database & Caching -->
                 <div class="tech-item" title="PostgreSQL">
                     <i class="fas fa-database"></i>
                 </div>
+                <div class="tech-item" title="Redis">
+                    <i class="fas fa-bolt"></i>
+                </div>
+
+                <!-- Frontend -->
                 <div class="tech-item" title="JavaScript">
                     <i class="fab fa-js"></i>
                 </div>
@@ -128,11 +140,24 @@
                 <div class="tech-item" title="Bootstrap">
                     <i class="fab fa-bootstrap"></i>
                 </div>
-                <div class="tech-item" title="Git">
-                    <i class="fab fa-git-alt"></i>
-                </div>
+
+                <!-- DevOps & Tools -->
                 <div class="tech-item" title="Docker">
                     <i class="fab fa-docker"></i>
+                </div>
+                <div class="tech-item" title="Git / GitHub">
+                    <i class="fab fa-git-alt"></i>
+                </div>
+                <div class="tech-item" title="GitHub Actions">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <div class="tech-item" title="Celery">
+                    <i class="fas fa-tasks"></i>
+                </div>
+
+                <!-- Security -->
+                <div class="tech-item" title="JWT / OAuth2">
+                    <i class="fas fa-shield-alt"></i>
                 </div>
             </div>
         </div>
@@ -144,27 +169,36 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="about-content fade-in">
+                        <!-- Section Header -->
+                        <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 1.5rem;">Building scalable <br>backends that work.</h2>
+                        
+                        <!-- Main Text -->
                         <p class="about-text">
-                            Backend Developer with <span class="highlight-text">bootcamp training</span> creating scalable solutions
-                            for web applications that serve modern business needs.
+                            Backend developer with <span class="highlight-text">2+ years of focused learning</span> 
+                            and multiple production-deployed projects. I specialize in 
+                            <span class="highlight-text">Python, Django, and Django REST Framework</span>, 
+                            building APIs that are clean, tested, and built to scale.
                         </p>
+                        
                         <p class="about-text">
-                            Specialist in <span class="highlight-text">Python, Django, and PostgreSQL</span>, with knowledge of
-                            modern frontend technologies. Focused on clean architectures, efficient database design, and
-                            best development practices.
+                            Currently enrolled at <span class="highlight-text">42.uz</span> (Express Backend & Algorithms) 
+                            and a graduate of <span class="highlight-text">MohirDev Full Stack Python Bootcamp</span>. 
+                            I'm actively seeking my first junior backend role where I can contribute and grow fast.
                         </p>
+
+                        <!-- Stats Section -->
                         <div class="stats">
                             <div class="stat-item">
-                                <div class="stat-number">6+</div>
-                                <div class="stat-label">months of learning</div>
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Completed Projects</div>
                             </div>
                             <div class="stat-item">
-                                <div class="stat-number">8</div>
-                                <div class="stat-label">completed projects</div>
+                                <div class="stat-number">85+</div>
+                                <div class="stat-label">Unit Tests Written</div>
                             </div>
                             <div class="stat-item">
-                                <div class="stat-number">100%</div>
-                                <div class="stat-label">dedication</div>
+                                <div class="stat-number">2+</div>
+                                <div class="stat-label">Years of Learning</div>
                             </div>
                         </div>
                     </div>
@@ -177,23 +211,88 @@
     <section id="experience" class="experience">
         <div class="container">
             <h2 class="section-title fade-in">Experience</h2>
-            <p class="section-subtitle text-center fade-in">Growth trajectory in the development area, focused on scalable solutions</p>
+            <p class="section-subtitle text-center fade-in">
+                Growth trajectory in the development area, focused on scalable solutions. <br>
+                From first lines of code to production-deployed backends with live users.
+            </p>
 
+            <!-- Portfolio / Freelance -->
             <div class="experience-item fade-in">
                 <div class="experience-header">
                     <div>
-                        <div class="experience-title">Full-Stack Development Student</div>
-                        <div class="experience-company">Bootcamp Program</div>
+                        <div class="experience-title">Backend Developer — Portfolio & Freelance</div>
+                        <div class="experience-company">Self-Directed · Production Projects</div>
                         <div class="experience-location">Tashkent, Uzbekistan</div>
                     </div>
                     <div class="experience-period">
-                        Aug 2024 - Present
-                        <span class="experience-current">Current</span>
+                        Jan 2025 – Present
+                        <span class="experience-current">Active</span>
                     </div>
                 </div>
                 <div class="experience-description">
-                    Intensive training in modern web development technologies with focus on backend development.
-                    Building real-world projects using Django, PostgreSQL, and modern development practices.
+                    <ul class="exp-achievements">
+                        <li>Built and deployed <strong>EduCore CRM</strong> — multi-school management backend with RBAC, JWT + Google OAuth2, Redis caching, CI/CD via GitHub Actions, and Android frontend integration via live API.</li>
+                        <li>Built <strong>Instagram Clone API</strong> with dual-channel auth, Celery async tasks, rate limiting, and full Swagger/OpenAPI docs.</li>
+                        <li>Implemented <strong>soft delete, audit trail (AuditMixin), and request logging middleware</strong> for production-grade reliability.</li>
+                        <li>Maintained 85+ unit and integration tests across projects; structured settings into base/dev/prod split.</li>
+                    </ul>
+                </div>
+                <div class="tech-tags">
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">DRF</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Celery</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">GitHub Actions</span>
+                    <span class="tech-tag">JWT</span>
+                    <span class="tech-tag">Render / Railway</span>
+                </div>
+            </div>
+
+            <!-- 42.uz -->
+            <div class="experience-item fade-in">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Student — Express Backend & Algorithms</div>
+                        <div class="experience-company">42.uz · IT Academy</div>
+                        <div class="experience-location">Tashkent, Uzbekistan</div>
+                    </div>
+                    <div class="experience-period">
+                        2024 – Present
+                        <span class="experience-current">Enrolled</span>
+                    </div>
+                </div>
+                <div class="experience-description">
+                    <ul class="exp-achievements">
+                        <li>Completing structured algorithm and data structures curriculum (HashMap, Binary Search, Sliding Window, etc.).</li>
+                        <li>Working through 8-week LeetCode interview prep plan in Python.</li>
+                    </ul>
+                </div>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Algorithms</span>
+                    <span class="tech-tag">Data Structures</span>
+                    <span class="tech-tag">LeetCode</span>
+                    <span class="tech-tag">Problem Solving</span>
+                </div>
+            </div>
+
+            <!-- MohirDev -->
+            <div class="experience-item fade-in">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Full Stack Python Bootcamp Graduate</div>
+                        <div class="experience-company">MohirDev · Bootcamp</div>
+                        <div class="experience-location">Tashkent, Uzbekistan</div>
+                    </div>
+                    <div class="experience-period">Aug 2024 – Feb 2025</div>
+                </div>
+                <div class="experience-description">
+                    <ul class="exp-achievements">
+                        <li>Intensive training in Django, DRF, PostgreSQL, HTML/CSS, JavaScript, and Bootstrap.</li>
+                        <li>Built multiple real-world projects including a News Website, Library API, and Password Manager.</li>
+                    </ul>
                 </div>
                 <div class="tech-tags">
                     <span class="tech-tag">Django</span>
@@ -205,26 +304,6 @@
                 </div>
             </div>
 
-            <div class="experience-item fade-in">
-                <div class="experience-header">
-                    <div>
-                        <div class="experience-title">Self-Taught Developer</div>
-                        <div class="experience-company">Personal Learning</div>
-                        <div class="experience-location">Tashkent, Uzbekistan</div>
-                    </div>
-                    <div class="experience-period">May 2024 - Aug 2024</div>
-                </div>
-                <div class="experience-description">
-                    Started learning programming fundamentals, completed online courses, and built first projects.
-                    Developed strong foundation in Python programming and web development basics.
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">HTML</span>
-                    <span class="tech-tag">CSS</span>
-                    <span class="tech-tag">Git</span>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -232,7 +311,9 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title fade-in">Featured Projects</h2>
-            <p class="section-subtitle text-center fade-in">Real projects built with Python, Django, DRF and more</p>
+            <p class="section-subtitle text-center fade-in">
+                Real backends built with Django, DRF, PostgreSQL and deployed to production.
+            </p>
 
             <div class="projects-grid">
 
@@ -475,7 +556,7 @@
             <div class="cta-section fade-in">
                 <h3 class="cta-title">Interested in working together?</h3>
                 <p class="cta-description">
-                    Let's discuss how I can help turn your idea into reality.
+                    Let's discuss how I can help turn your idea into a production-ready backend
                 </p>
                 <div class="cta-buttons">
                     <a class="btn btn-primary" href="mailto:uktamturgunov30@gmail.com">
@@ -492,14 +573,17 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title fade-in">Contact</h2>
-            <p class="section-subtitle text-center fade-in">Open to internships, junior roles, and freelance projects. Let's build something.</p>
+            <p class="section-subtitle text-center fade-in">
+                Open to junior backend roles, internships, and freelance projects.. Let's build something.
+            </p>
 
             <div class="row g-5 mt-2">
                 <div class="col-lg-5 fade-in">
                     <h4 class="contact-heading">Let's work together</h4>
                     <p class="contact-text">
                         I'm currently available for junior backend developer positions and freelance projects.
-                        Whether you have a question or just want to say hi — my inbox is always open.
+                        Whether you have a job opportunity, project idea, or just want to say hi —
+                        my inbox is always open. I typically respond within 24 hours.
                     </p>
 
                     <div class="contact-links">
@@ -562,15 +646,17 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h5>Uktam Turgunov</h5>
-                    <p>Backend Developer sifatida zamonaviy va masshtablanuvchi yechimlar yarataman.</p>
+                    <p>Backend Developer building scalable and production-ready web solutions with Python & Django.</p>
                 </div>
 
                 <div class="footer-links">
                     <h6>Navigation</h6>
                     <ul>
                         <li><a href="#start">Start</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
 
