@@ -24,6 +24,8 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
+        <!-- Sidebar Overlay inside nav to share stacking context -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="#start">
@@ -32,14 +34,16 @@
             </a>
 
             <!-- Mobile toggler (Gamburger tugmasi) -->
-            <button class="navbar-toggler" type="button" 
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" id="menuToggler" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
             <!-- Nav links + icons (Mobil menyu ichiga kiradi) -->
             <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Mobil menyuni yopish tugmasi (faqat mobile uchun) -->
+                <button class="sidebar-close-btn" id="sidebarClose" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
                 <!-- Markazdagi linklar -->
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
