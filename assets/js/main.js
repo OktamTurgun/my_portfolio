@@ -18,7 +18,7 @@ document.querySelectorAll('.project-card').forEach((card, i) => {
 
 
 // ── ACTIVE NAV LINK (scroll orqali) ──
-const sections = ['start', 'experience', 'projects', 'contact'];
+const sections = ['start', 'about', 'experience', 'projects', 'contact'];
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
 window.addEventListener('scroll', () => {
@@ -40,16 +40,44 @@ window.addEventListener('scroll', () => {
 });
 
 
-// ── MOBILE MENU ──
-function toggleMenu() {
-    const menu = document.getElementById('mobileMenu');
-    if (menu) menu.classList.toggle('open');
+// ── MOBILE MENU (Custom Sidebar Drawer) ──
+const menuToggler = document.getElementById('menuToggler');
+const sidebar = document.getElementById('navbarNav');
+const sidebarClose = document.getElementById('sidebarClose');
+const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+function openSidebarMenu() {
+    if (sidebar) sidebar.classList.add('show');
+    if (sidebarOverlay) sidebarOverlay.classList.add('show');
+    document.body.style.overflow = 'hidden'; // Background scroll to'xtatish
 }
 
-function closeMenu() {
-    const menu = document.getElementById('mobileMenu');
-    if (menu) menu.classList.remove('open');
+function closeSidebarMenu() {
+    if (sidebar) sidebar.classList.remove('show');
+    if (sidebarOverlay) sidebarOverlay.classList.remove('show');
+    document.body.style.overflow = ''; // Scrollni qaytarish
 }
+
+if (menuToggler) {
+    menuToggler.addEventListener('click', openSidebarMenu);
+}
+
+if (sidebarClose) {
+    sidebarClose.addEventListener('click', closeSidebarMenu);
+}
+
+if (sidebarOverlay) {
+    sidebarOverlay.addEventListener('click', closeSidebarMenu);
+}
+
+// Navigatsiya linklar bosilganda menyuni yopish
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth < 992) {
+            closeSidebarMenu();
+        }
+    });
+});
 
 
 // ── CONTACT FORM ──
