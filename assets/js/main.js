@@ -97,6 +97,16 @@ function sendMessage() {
         return;
     }
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        status.textContent = '⚠ Please enter a valid email address.';
+        status.style.display = 'block';
+        status.style.background = 'rgba(239,68,68,0.1)';
+        status.style.border = '1px solid #ef4444';
+        status.style.color = '#ef4444';
+        return;
+    }
+
     emailjs.send("service_18ih6u8", "template_upkjxdk", {
         name: name,
         email: email,

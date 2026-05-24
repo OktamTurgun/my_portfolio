@@ -60,6 +60,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ── NAVIGATION ── */
@@ -718,6 +719,7 @@ body {
     border: 1px solid var(--border-color);
     border-radius: 15px;
     padding: 2rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .input-label {
