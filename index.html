@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uktam Turgunov - Backend Python Developer</title>
+    <!-- Preconnect resource hints for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Uktam Turgunov - Python & Django Backend Developer. Scalable backend yechimlar va API yaratish bo'yicha mutaxassis.">
+    <meta name="keywords" content="Uktam Turgunov, Python, Django, DRF, PostgreSQL, Backend Developer, Uzbekistan, Tashkent">
+    <meta name="author" content="Uktam Turgunov">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oktamturgun.github.io/">
+    <meta property="og:title" content="Uktam Turgunov | Backend Python Developer">
+    <meta property="og:description" content="Production-ready API va backend tizimlar yaratish bo'yicha 2+ yillik tajribaga ega dasturchi portfoliosi.">
+    <meta property="og:image" content="assets/images/portfolio-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Uktam Turgunov | Backend Python Developer">
+    <meta property="twitter:description" content="Production-ready API va backend tizimlar yaratish bo'yicha 2+ yillik tajribaga ega dasturchi portfoliosi.">
+    <meta property="twitter:image" content="assets/images/portfolio-preview.jpg">
+
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/ut-favicon-16.png">
@@ -17,8 +39,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>emailjs.init("ztwLi3SCmtMfeimxP");</script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            emailjs.init("ztwLi3SCmtMfeimxP");
+        });
+    </script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -65,13 +91,13 @@
 
                 <!-- O'ng tomondagi iconlar -->
                 <div class="navbar-icons">
-                    <a href="https://github.com/OktamTurgun" target="_blank" class="navbar-icon" title="GitHub">
+                    <a href="https://github.com/OktamTurgun" target="_blank" class="navbar-icon" aria-label="GitHub Profile" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com/in/uktam-turgunov" target="_blank" class="navbar-icon" title="LinkedIn">
+                    <a href="https://linkedin.com/in/uktam-turgunov" target="_blank" class="navbar-icon" aria-label="LinkedIn Profile" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <button id="theme-toggle" class="navbar-icon" title="Toggle theme">
+                    <button id="theme-toggle" class="navbar-icon" aria-label="Toggle theme" title="Toggle theme">
                         <i id="theme-icon" class="fas fa-moon"></i>
                     </button>
                 </div>
@@ -84,7 +110,7 @@
         <div class="container">
             <div class="hero-content fade-in">
                 <div class="hero-avatar">
-                    <img src="assets/images/avatar.jpg" alt="Uktam Turgunov">
+                    <img src="assets/images/avatar.webp" alt="Uktam Turgunov">
                     <div class="status-indicator"></div>
                 </div>
                 <h1>Uktam Turgunov</h1>
@@ -667,9 +693,9 @@
                 <div class="footer-links">
                     <h6>Socials</h6>
                     <div class="d-flex gap-3">
-                        <a href="https://github.com/OktamTurgun" class="navbar-icon" title="GitHub"><i class="fab fa-github fa-lg"></i></a>
-                        <a href="https://linkedin.com/in/uktam-turgunov" class="navbar-icon" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="https://t.me/uktamturgunov" class="navbar-icon" title="Telegram"><i class="fab fa-telegram fa-lg"></i></a>
+                        <a href="https://github.com/OktamTurgun" class="navbar-icon" aria-label="GitHub Profile" title="GitHub"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="https://linkedin.com/in/uktam-turgunov" class="navbar-icon" aria-label="LinkedIn Profile" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="https://t.me/uktamturgunov" class="navbar-icon" aria-label="Telegram Channel" title="Telegram"><i class="fab fa-telegram fa-lg"></i></a>
                     </div>
                 </div>
             </div>
